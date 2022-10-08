@@ -6,3 +6,32 @@ ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemá
 triângulo).
 
 */
+
+function Triangulo(lado1, lado2, lado3){
+   let lado = [lado1, lado2, lado3]
+   let lados = lado.sort(function(a,b){
+      return a-b;
+   })
+   // console.log(lados)
+   
+   
+      if(lados[0]+lados[1] > lados[2])
+      {
+         if((lados[0] === lados[1]) && (lados[1] === lados[2])){
+            console.log('Todos os lados são iguais. O triangulo é Equilátero')  
+         
+         }else if((lados[0] !== lados[1]) && (lados[1] !== lados[2])){
+            console.log('Nenhum dos lados são iguais. O triangulo é Escaleno')
+
+         }else{
+            console.log('Dois lados do Triângulo possuem as mesmas medidas. Este é um triangulo Isósceles')
+         }
+      }else{                                                                                                                        
+         console.log('Não é um Triangulo')
+      }
+       
+
+}
+
+
+Triangulo(120, 12, 120);

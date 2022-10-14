@@ -21,8 +21,11 @@ function mediaPonderada(cod_aluno, nota1, nota2, nota3){
 
     if(media>=5){
         situacao = 'APROVADO'
+    }else{
+        situacao = 'REPROVADO'
     }
     // return media.toFixed(2)
+    return `Código do Aluno: ${cod_aluno}\nNotas:\n\t${nota1}, ${nota2}, ${nota3}\nSituação:\n\t${situacao}`
 
     
     

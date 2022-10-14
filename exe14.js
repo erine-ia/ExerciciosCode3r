@@ -5,3 +5,24 @@ escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quil
 também um default, que retornará uma mensagem de erro no console.
 
 */
+
+function frutas(fruta){
+    switch(fruta){
+        case 'maçã':
+            return 'Não vendemos esta fruta aqui';
+        break
+        case 'kiwi':
+            return 'Estamos com escassez de kiwis'
+            break
+        case 'melancia':
+            return 'Aqui está, são 3 reais o quilo'
+            break
+        default: return 'Fruta inválida'
+
+    }
+}
+
+console.log(frutas('maçã'))
+console.log(frutas('kiwi'))
+console.log(frutas('melancia'))
+console.log(frutas('laranja'))

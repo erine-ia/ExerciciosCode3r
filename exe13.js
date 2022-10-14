@@ -4,3 +4,26 @@
     ,
 +*/
 
+function diaSemana(dia){
+    switch(dia){
+        case 1:
+        case 7:
+            return "Hoje é Fim de Semana";
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            return "Hoje é dia útil!";
+        default:
+            return 'Este dia não é válido'
+
+    }
+}
+
+console.log(diaSemana(7))
+console.log(diaSemana(8))
+console.log(diaSemana(6))
+console.log(diaSemana(5))
+console.log(diaSemana(4))
+console.log(diaSemana(1))

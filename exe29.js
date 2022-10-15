@@ -4,3 +4,24 @@ deste vetor estão no intervalo [10,20] (repare que o intervalo é fechado, ou s
 deles estão fora do intervalo, escrevendo estas informações.
 
 */
+
+function intervalo(vetor){
+    let dentro = 0 
+    let fora = 0
+    for(let i = 0; i<= vetor.length; i++){
+        let v = vetor[i] 
+     
+        if(v<=20 && v >=10){
+            dentro++
+
+        }else{
+            fora++
+        }
+    } 
+
+     return `Há incluído neste vetor ${dentro} números entre 10 e 20, e ${fora} números fora deste intervalo`
+
+}
+
+const numeros = [ 7, 8, 9, 10, 11, 12, 16, 17, 18, 19, 20, 21]
+console.log(intervalo(numeros))
